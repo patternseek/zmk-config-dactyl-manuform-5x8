@@ -37,8 +37,8 @@
 
         raise_layer {
             bindings = <
-    &kp KP_N0 &trans    &trans    &trans    &trans                        &trans    &trans    &trans    &trans    &trans
     &trans    &trans    &trans    &trans    &trans                        &trans    &trans    &trans    &trans    &trans
+    &kp N7    &kp N5    &kp N3    &kp N1    &kp N9                        &kp N8    &kp N0    &kp N2    &kp N4    &kp N6
     &trans    &trans    &trans    &trans    &trans                        &trans    &trans    &trans    &trans    &trans
               &trans    &trans                                                                &trans    &trans
                                   &trans    &trans                        &trans    &trans
