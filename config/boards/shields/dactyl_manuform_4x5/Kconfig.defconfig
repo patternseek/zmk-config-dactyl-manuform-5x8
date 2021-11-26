@@ -1,17 +1,10 @@
 if SHIELD_DACTYL_MANUFORM_4x5_LEFT
 
     config ZMK_KEYBOARD_NAME
-        default "DM-4x5(Left)"
+        default "DM 4x5"
 
     config ZMK_SPLIT_BLE_ROLE_CENTRAL
         default y
-
-endif
-
-if SHIELD_DACTYL_MANUFORM_4x5_RIGHT
-
-    config ZMK_KEYBOARD_NAME
-        default "DM-4x5(Right)"
 
 endif
 
