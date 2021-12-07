@@ -14,13 +14,13 @@
 
         default_layer {
             bindings = <
-				&kp L			&kp W		&kp W		&kp W		&kp W		&kp W		&kp 		&kp W            	&kp R		&kp W		&kp W		&kp W		&kp W		&kp W		&kp W		&kp W			
-				&bt BT_CLR		&kp W		&kp W		&kp W		&kp W		&kp W		&kp W		&kp W            	&kp W		&kp W		&kp W		&kp W		&kp W		&kp W		&kp W		&kp W
-                &bt BT_NXT		&kp W		&kp W		&kp Q		&kp W		&kp E		&kp R		&kp T  	         	&kp Z		&kp U		&kp I		&kp O		&kp P		&kp W		&kp PLUS	&kp W
-                &kp SPACE		&kp W		&kp W		&kp A		&kp S		&kp D		&kp F		&kp G            	&kp H		&kp J		&kp K		&kp L		&kp Ö		&kp W		&kp HASH	&kp W
-                &kp W			&kp W		&kp LCTRL	&kp LSHFT	&kp Y		&kp X		&kp C		&kp V            	&kp B		&kp N		&kp M		&kp COMMA	&kp DOT		&kp FSLH	&kp W		&kp W
-																	&kp SPACE	&kp SPACE	&kp SPACE	&kp SPACE			&kp W		&kp W		&kp W		&kp W
-																	&kp SPACE	&kp SPACE	&kp SPACE	&kp SPACE			&kp W		&kp W		&kp W		&kp W
+				&kp L 			&kp W 		&kp W 		&kp W 		&kp W 		&kp W 		&kp  		&kp W             	&kp R	 	&kp W 		&kp W 		&kp W 		&kp W 		&kp W 		&kp W 		&kp W	 		
+				&bt BT_CLR 		&kp W 		&kp W 		&kp W 		&kp W 		&kp W 		&kp W 		&kp W             	&kp W 		&kp W 		&kp W 		&kp W 		&kp W 		&kp W 		&kp W	 	&kp W
+                &bt BT_NXT 		&kp W 		&kp W 		&kp Q 		&kp W 		&kp E 		&kp R 		&kp T  	         	&kp Z 		&kp U 		&kp I 		&kp O 		&kp P 		&kp W 		&kp PLUS 	&kp W
+                &out OUT_TOG 	&kp W 		&kp W 		&kp A	 	&kp S 		&kp D 		&kp F 		&kp G            	&kp H 		&kp J 		&kp K  		&kp L 		&kp O 		&kp W	 	&kp HASH 	&kp W
+                &kp W 			&kp W 		&kp LCTRL 	&kp LSHFT 	&kp Y 		&kp X 		&kp C	 	&kp V            	&kp B 		&kp N 		&kp M 		&kp COMMA 	&kp DOT	 	&kp FSLH 	&kp W	 	&kp W
+																	&kp SPACE 	&kp SPACE 	&kp SPACE 	&kp SPACE 			&kp W 		&kp W 		&kp W 		&kp W 
+																	&kp SPACE 	&kp SPACE 	&kp SPACE 	&kp SPACE	 		&kp W 		&kp W 		&kp W 		&kp W 
             >;
         };
 
@@ -60,4 +60,4 @@
             >;
         };
     };
-}
+};
