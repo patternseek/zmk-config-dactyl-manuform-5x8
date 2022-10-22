@@ -14,35 +14,35 @@
 
         default_layer {
             bindings = <
-				&kp L &none &none &none    &none     &none      &none   &none            &kp R      &none   &none     &none      &none    &none &none &none			
-				&none &none &none &none    &none     &none      &none   &none            &none      &none   &none     &none      &none    &none &none &none
-                &none &none &none &kp S    &kp W     &kp E      &kp R   &kp T  	         &kp Z      &kp U   &kp I     &kp O      &kp P     &none &none &none
-                &none &none &none &kp A    &kp R     &kp S      &kp T   &kp G            &kp H      &kp J   &kp K     &kp L      &kp O     &none &none &none
-                &none &none &none &kp Z    &kp X     &kp C      &kp D   &kp V            &kp B      &kp N   &kp M     &kp COMMA  &kp DOT &kp FSLH &none &none
-                                           &kp ESC   &kp EQUAL  &mo LWR &kp SPACE        &kp MINUS  &kp SQT &sk LSHFT &mo RSE
-                                           &kp LCTRL &mo ADJ    &kp TAB &kp LALT         &kp LCTRL  &kp RET &kp LGUI  &kp BSPC
+				&bt BT_CLR      &kp W 		&kp ESC				&kp F1 		&kp F2 		&kp F3 		&kp F4 		&kp F5             	&kp R	 	&kp W 		&kp W 		&kp W 		&kp W 		&kp W 		&kp W	 		
+				&bt BT_NXT      &kp W 		&kp TAB 			&kp N1 		&kp N2 		&kp N3 		&kp N4 		&kp N5             	&kp W 		&kp W 		&kp W 		&kp W 		&kp W 		&kp W 		&kp W
+                &out OUT_TOG    &kp W 		&kp LOCKING_CAPS	&kp Q 		&kp W 		&kp E 		&kp R 		&kp T  	         	&kp Z 		&kp U 		&kp I 		&kp O 		&kp P 		&kp W 		&kp W
+                &kp W           &kp W 		&kp LSHIFT			&kp A	 	&kp S 		&kp D 		&kp F 		&kp G            	&kp H 		&kp J 		&kp K  		&kp L 		&kp O 		&kp W	 	&kp W
+                &kp W           &kp W 		&kp LCTRL			&kp Y 	 	&kp X 		&kp C		&kp V	 	&kp B            	&kp N 		&kp M 		&kp COMMA	&kp DOT		&kp W	 	&kp W	 	&kp W
+																			&kp LWIN 	&kp LALT 	&kp SPACE 	&kp W        		&kp W 		&kp W 		&kp W 		&kp W 
+																			&kp W 		&kp W		&kp LSHIFT 	&kp W        	 	&kp W 		&kp W 		&kp W 		&kp W 
             >;
         };
 
         lower_layer {
             bindings = <
-				&kp L &none &none &none    &none     &none      &none   &none            &kp R      &none   &none     &none      &none    &none &none &none			
-				&none &none &none &none    &none     &none      &none   &none            &none      &none   &none     &none      &none    &none &none &none
-                &none &none &none &kp S    &kp W     &kp E      &kp R   &kp T  	         &kp Z      &kp U   &kp I     &kp O      &kp P     &none &none &none
-                &none &none &none &kp A    &kp R     &kp S      &kp T   &kp G            &kp H      &kp J   &kp K     &kp L      &kp O     &none &none &none
-                &none &none &none &kp Z    &kp X     &kp C      &kp D   &kp V            &kp B      &kp N   &kp M     &kp COMMA  &kp DOT &kp FSLH &none &none
-                                           &kp ESC   &kp EQUAL  &mo LWR &kp SPACE        &kp MINUS  &kp SQT &sk LSHFT &mo RSE
-                                           &kp LCTRL &mo ADJ    &kp TAB &kp LALT         &kp LCTRL  &kp RET &kp LGUI  &kp BSPC
+				&bt BT_CLR      &kp W 		&kp ESC				&kp F1 		&kp F2 		&kp F3 		&kp F4 		&kp F5             	&kp R	 	&kp W 		&kp W 		&kp W 		&kp W 		&kp W 		&kp W	 		
+				&bt BT_NXT      &kp W 		&kp TAB 			&kp N1 		&kp N2 		&kp N3 		&kp N4 		&kp N5             	&kp W 		&kp W 		&kp W 		&kp W 		&kp W 		&kp W 		&kp W
+                &out OUT_TOG    &kp W 		&kp LOCKING_CAPS	&kp Q 		&kp W 		&kp E 		&kp R 		&kp T  	         	&kp Z 		&kp U 		&kp I 		&kp O 		&kp P 		&kp W 		&kp W
+                &kp W           &kp W 		&kp LSHIFT			&kp A	 	&kp S 		&kp D 		&kp F 		&kp G            	&kp H 		&kp J 		&kp K  		&kp L 		&kp O 		&kp W	 	&kp W
+                &kp W           &kp W 		&kp LCTRL			&kp Y 	 	&kp X 		&kp C		&kp V	 	&kp B            	&kp N 		&kp M 		&kp COMMA	&kp DOT		&kp W	 	&kp W	 	&kp W
+																			&kp LWIN 	&kp LALT 	&kp SPACE 	&kp W        		&kp W 		&kp W 		&kp W 		&kp W 
+																			&kp W 		&kp W		&kp LSHIFT 	&kp W        	 	&kp W 		&kp W 		&kp W 		&kp W 
             >;
         };
 
         raise_layer {
             bindings = <
-				&kp L &none &none &none    &none     &none      &none   &none            &kp R      &none   &none     &none      &none    &none &none &none			
-				&none &none &none &none    &none     &none      &none   &none            &none      &none   &none     &none      &none    &none &none &none
-                &none &none &none &kp S    &kp W     &kp E      &kp R   &kp T  	         &kp Z      &kp U   &kp I     &kp O      &kp P     &none &none &none
-                &none &none &none &kp A    &kp R     &kp S      &kp T   &kp G            &kp H      &kp J   &kp K     &kp L      &kp O     &none &none &none
-                &none &none &none &kp Z    &kp X     &kp C      &kp D   &kp V            &kp B      &kp N   &kp M     &kp COMMA  &kp DOT &kp FSLH &none &none
+				&kp L &kp W &kp W &kp W    &kp W     &kp W      &kp W   &kp W            &kp R      &kp W   &kp W     &kp W      &kp W    &kp W &kp W
+				&kp W &kp W &kp W &kp W    &kp W     &kp W      &kp W   &kp W            &kp W      &kp W   &kp W     &kp W      &kp W    &kp W &kp W
+                &kp W &kp W &kp W &kp S    &kp W     &kp E      &kp R   &kp T  	         &kp Z      &kp U   &kp I     &kp O      &kp P     &kp W &kp W
+                &kp W &kp W &kp W &kp A    &kp R     &kp S      &kp T   &kp G            &kp H      &kp J   &kp K     &kp L      &kp O     &kp W &kp W
+                &kp W &kp W &kp W &kp Z    &kp X     &kp C      &kp D   &kp V            &kp B      &kp N   &kp M     &kp COMMA  &kp DOT &kp FSLH &kp W
                                            &kp ESC   &kp EQUAL  &mo LWR &kp SPACE        &kp MINUS  &kp SQT &sk LSHFT &mo RSE
                                            &kp LCTRL &mo ADJ    &kp TAB &kp LALT         &kp LCTRL  &kp RET &kp LGUI  &kp BSPC
             >;
@@ -50,11 +50,11 @@
 
         adjust_layer {
             bindings = <
-				&kp L &none &none &none    &none     &none      &none   &none            &kp R      &none   &none     &none      &none    &none &none &none			
-				&none &none &none &none    &none     &none      &none   &none            &none      &none   &none     &none      &none    &none &none &none
-                &none &none &none &kp S    &kp W     &kp E      &kp R   &kp T  	         &kp Z      &kp U   &kp I     &kp O      &kp P     &none &none &none
-                &none &none &none &kp A    &kp R     &kp S      &kp T   &kp G            &kp H      &kp J   &kp K     &kp L      &kp O     &none &none &none
-                &none &none &none &kp Z    &kp X     &kp C      &kp D   &kp V            &kp B      &kp N   &kp M     &kp COMMA  &kp DOT &kp FSLH &none &none
+				&kp L &kp W &kp W &kp W    &kp W     &kp W      &kp W   &kp W            &kp R      &kp W   &kp W     &kp W      &kp W    &kp W &kp W		
+				&kp W &kp W &kp W &kp W    &kp W     &kp W      &kp W   &kp W            &kp W      &kp W   &kp W     &kp W      &kp W    &kp W &kp W
+                &kp W &kp W &kp W &kp S    &kp W     &kp E      &kp R   &kp T  	         &kp Z      &kp U   &kp I     &kp O      &kp P     &kp W &kp W
+                &kp W &kp W &kp W &kp A    &kp R     &kp S      &kp T   &kp G            &kp H      &kp J   &kp K     &kp L      &kp O     &kp W &kp W
+                &kp W &kp W &kp W &kp Z    &kp X     &kp C      &kp D   &kp V            &kp B      &kp N   &kp M     &kp COMMA  &kp DOT &kp FSLH &kp W
                                            &kp ESC   &kp EQUAL  &mo LWR &kp SPACE        &kp MINUS  &kp SQT &sk LSHFT &mo RSE
                                            &kp LCTRL &mo ADJ    &kp TAB &kp LALT         &kp LCTRL  &kp RET &kp LGUI  &kp BSPC
             >;
