@@ -20,7 +20,7 @@
                 &kp W           &kp W 		    &kp LSHIFT			&kp A	 	    &kp S 		    &kp D 		    &kp F 		    &kp G            	&kp H 		    &kp J 		    &kp K  		    &kp L 		    &kp O 		    &kp W	 	&kp W
                 &kp W           &kp W 		    &kp LCTRL			&kp Y 	 	    &kp X 		    &kp C		    &kp V	 	    &kp B            	&kp N 		    &kp M 		    &kp COMMA	    &kp DOT		    &kp W	 	    &kp W	 	&kp W
                                                                     &kp LWIN 	    &kp LALT 	    &kp SPACE 	    &kp W           &kp N1 		        &kp N2 		    &mo ADJ         &kp N4          &kp N5 		    &kp N6 
-																	&kp W 		    &kp W	        &kp LSHIFT 	    &kp W        	 			    	 			
+																	&mo LWR	        &mo ADJ	        &mo RSE 	    &kp W        	 			    	 			
             >;
         };
 
