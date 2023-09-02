@@ -11,6 +11,9 @@
 #define LWR 2
 #define ADJ 3
 
+// euro sign
+ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -43,7 +46,7 @@
             bindings = <
 				&kp W           &bt BT_CLR      &out OUT_TOG        &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5            &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5    &bt BT_CLR  &out OUT_TOG
 				&kp W           &kp W 		    &kp TAB 			&kp N1 		    &kp N2 		    &kp N3 		    &kp N4 		    &kp N5             	    &kp N6 		    &kp N7 		    &kp N8 		    &kp N9 		    &kp N0 		    &kp QMARK   &kp W
-                &kp W           &kp W 		    &kp LOCKING_CAPS	&kp Q 		    &kp W 		    &kp E 		    &kp R 		    &kp T  	         	    &kp Z 		    &kp U 		    &kp I 		    &kp O 		    &kp P 		    &kp W 		&kp W
+                &kp W           &kp W 		    &kp LOCKING_CAPS	&kp Q 		    &kp W 		    &euro_sign	    &kp R 		    &kp T  	         	    &kp Z 		    &kp U 		    &kp I 		    &kp O 		    &kp P 		    &kp W 		&kp W
                 &kp W           &kp W 		    &kp LSHIFT			&kp A	 	    &kp S 		    &kp D 		    &kp F 		    &kp G            	    &kp H 		    &kp J 		    &kp K  		    &kp L 		    &kp O 		    &kp W	 	&kp W
                 &kp W           &kp W 		    &kp LCTRL			&kp Y 	 	    &kp X 		    &kp C		    &kp V	 	    &kp B            	    &kp N 		    &kp M 		    &kp COMMA	    &kp DOT		    &kp W	 	    &kp W	 	&kp W
                                                                                     &kp LWIN 	    &kp LALT 	    &kp SPACE 	    &kp W          		    &mo ADJ		    &mo LWR         &mo RSE         &kp SPACE       &kp RALT        &kp RCTRL 
