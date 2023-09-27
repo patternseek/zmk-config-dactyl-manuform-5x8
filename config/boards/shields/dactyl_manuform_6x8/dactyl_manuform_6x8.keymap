@@ -3,16 +3,20 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define HOST_OS 2  // set to 2 for macOS/Windows-Alt-Codes, default is 0 (Windows)
+/*  #include "../zmk-nodefree-config/helper.h" */
 #include "../../../../zmk-nodefree-config/helper.h"
-#include "../../../../international_chars/german.dtsi"
+#include "../../../../zmk-nodefree-config/international_chars/german.dtsi"
+
+/* layer and key shortcuts */
+
+#define ___ &trans
 
 #define DEFAULT 0
 #define RSE 1
 #define LWR 2
 #define ADJ 3
 
-// euro sign
+/* euro sign */
 ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
 
 / {
