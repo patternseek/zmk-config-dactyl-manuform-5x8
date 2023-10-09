@@ -26,7 +26,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
             label = "DE_ESZETT_BACKSLASH";
             #binding-cells = <0>;
             bindings = <&de_eszett>, <&kp BACKSLASH>;
-            mods = <(MOD_RALT)>;
+            mods = <(MOD_RSFT)>;
         };
     };
 };
