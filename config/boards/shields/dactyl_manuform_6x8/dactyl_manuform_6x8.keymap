@@ -28,7 +28,7 @@ ZMK_UNICODE_PAIR(hyphen_low_line,       N0, N0, N2, D,  N0, N0, N5, F)      // -
 / {
     keymap {
         compatible = "zmk,keymap";
-`
+
         default_layer {
             bindings = <
 				___             &kp ESC 	    &kp GRAVE			&kp F1 		    &kp F2 		    &kp F3 		    &kp F4 		    &kp F5             	    &kp F6	 	    &kp F7 		    &kp F8 		    &kp F9 		    &kp F10             &kp F11         &kp F12
@@ -41,7 +41,7 @@ ZMK_UNICODE_PAIR(hyphen_low_line,       N0, N0, N2, D,  N0, N0, N5, F)      // -
             >;
         };
 
-        alt_gr {                                                           
+        alt_gr_layer {                                                           
             bindings = <
 				___             ___    		    ___     			___ 	 	    ___ 		    ___ 		    ___ 		    ___                     ___             ___             ___             ___             ___                 ___             ___
 				___             ___    		    ___      			___ 		    ___ 		    ___ 		    ___ 		    ___             	    ___ 		    &kp LBRC	    &kp LBKT        &kp RBKT        &kp RBRC	        &kp BSLH        ___ 
