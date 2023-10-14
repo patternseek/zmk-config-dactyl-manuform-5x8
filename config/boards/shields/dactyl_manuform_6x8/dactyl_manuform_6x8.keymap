@@ -17,13 +17,13 @@
 #define DVC 3
 
 /* additional signs defined with unicode */ 
-ZMK_UNICODE_SINGLE(at, N0, N0, N4, N0)                                  // @
-ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)                             // €
-ZMK_UNICODE_SINGLE(micro_sign, N0, N0, B, N5)                           // µ
-ZMK_UNICODE_SINGLE(number_apostrophe, N0, N0, N2, N3,  N0, N0, N2, N7)  // # '
-ZMK_UNICODE_SINGLE(acute_grave_accent, N0, N0, N6, N0,  N0, N0, B, N4)  // ´ `
-ZMK_UNICODE_PAIR(plus_asterisk, N0, N0, N2, B,  N0, N0, N2, A)          // + *
-ZMK_UNICODE_PAIR(hyphen_low_line, N0, N0, N2, D,  N0, N0, N5, F)        // - _
+ZMK_UNICODE_SINGLE(at,                  N0, N0, N4, N0)                     // @
+ZMK_UNICODE_SINGLE(euro_sign,           N2, N0, A, C)                       // €
+ZMK_UNICODE_SINGLE(micro_sign,          N0, N0, B, N5)                      // µ
+ZMK_UNICODE_PAIR(number_apostrophe,     N0, N0, N2, N3, N0, N0, N2, N7)     // # '
+ZMK_UNICODE_PAIR(acute_grave_accent,    N0, N0, N6, N0, N0, N0, B, N4)      // ´ `
+ZMK_UNICODE_PAIR(plus_asterisk,         N0, N0, N2, B,  N0, N0, N2, A)      // + *
+ZMK_UNICODE_PAIR(hyphen_low_line,       N0, N0, N2, D,  N0, N0, N5, F)      // - _
 
 / {
     keymap {
@@ -36,7 +36,7 @@ ZMK_UNICODE_PAIR(hyphen_low_line, N0, N0, N2, D,  N0, N0, N5, F)        // - _
                 ___             ___		        &kp LOCKING_CAPS	&kp Q 		    &kp W 		    &kp E 		    &kp R 		    &kp T  	         	    &kp Z 		    &kp U 		    &kp I 		    &kp O 		    &kp P 		        &de_ue          &plus_asterisk
                 ___             ___ 		    &kp LSHIFT			&kp A	 	    &kp S 		    &kp D 		    &kp F 		    &kp G            	    &kp H 		    &kp J 		    &kp K  		    &kp L 		    &de_oe              &de_ae          &number_apostrophe
                 ___             ___ 		    &kp LCTRL			&kp Y 	 	    &kp X 		    &kp C		    &kp V	 	    &kp B            	    &kp N 		    &kp M 		    &kp COMMA	    &kp DOT		    &hyphen_low_line    &kp LSHIFT 	    &kp ENTER
-                                                                                    &kp LWIN 	    &kp LALT 	    &kp SPACE 	    ___          		    &mo DVC		    &mo ADJ         ___             &kp SPACE       &kp ALTGR           &kp RCTRL 
+                                                                                    &kp LWIN 	    &kp LALT 	    &kp SPACE 	    ___          		    &mo DVC		    &mo ADJ         ___             &kp SPACE       &mo ALTGR           &kp RCTRL 
 																	                &mo ADJ	        &mo DVC	        &mo ALTGR 	    ___        	 			    	 			
             >;
         };
