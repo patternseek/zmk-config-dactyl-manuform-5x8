@@ -20,17 +20,6 @@
 ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
 ZMK_UNICODE_SINGLE(micro_sign, N0, N0, B, N5)  // µ
 
-/ {
-    behaviors {
-        de_eszett_bslsh: de_eszett_backslash {
-            compatible = "zmk,behavior-mod-morph";
-            label = "DE_ESZETT_BACKSLASH";
-            #binding-cells = <0>;
-            bindings = <&de_eszett>, <&kp BACKSLASH>;
-            mods = <(MOD_RSFT)>;
-        };
-    };
-};
 
 / {
     keymap {
