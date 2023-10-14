@@ -16,9 +16,10 @@
 #define LWR 2
 #define ADJ 3
 
-/* euro sign */
+/* additional signs defined with unicode */
 ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
 ZMK_UNICODE_SINGLE(micro_sign, N0, N0, B, N5)  // µ
+ZMK_UNICODE_SINGLE(number_sign, N0, N0, N2, N3)  // #
 
 
 / {
@@ -30,9 +31,9 @@ ZMK_UNICODE_SINGLE(micro_sign, N0, N0, B, N5)  // µ
 				&kp W           &kp ESC 	    &kp GRAVE			&kp F1 		    &kp F2 		    &kp F3 		    &kp F4 		    &kp F5             	    &kp F6	 	    &kp F7 		    &kp F8 		    &kp F9 		    &kp F10         &kp F11         &kp F12
 				&kp W           &kp W 		    &kp TAB 			&kp N1 		    &kp N2 		    &kp N3 		    &kp N4 		    &kp N5             	    &kp N6 		    &kp N7 		    &kp N8 		    &kp N9 		    &kp N0 		    &de_eszett      &kp GRAVE
                 &kp W           &kp W 		    &kp LOCKING_CAPS	&kp Q 		    &kp W 		    &kp E 		    &kp R 		    &kp T  	         	    &kp Z 		    &kp U 		    &kp I 		    &kp O 		    &kp P 		    &de_ue          &kp PLUS
-                &kp W           &kp W 		    &kp LSHIFT			&kp A	 	    &kp S 		    &kp D 		    &kp F 		    &kp G            	    &kp H 		    &kp J 		    &kp K  		    &kp L 		    &de_oe          &de_ae          &kp HASH
+                &kp W           &kp W 		    &kp LSHIFT			&kp A	 	    &kp S 		    &kp D 		    &kp F 		    &kp G            	    &kp H 		    &kp J 		    &kp K  		    &kp L 		    &de_oe          &de_ae          &number_sign
                 &kp W           &kp W 		    &kp LCTRL			&kp Y 	 	    &kp X 		    &kp C		    &kp V	 	    &kp B            	    &kp N 		    &kp M 		    &kp COMMA	    &kp DOT		    &kp MINUS       &kp LSHIFT 	    &kp ENTER
-                                                                                    &kp LWIN 	    &kp LALT 	    &kp SPACE 	    &kp W          		    &mo ADJ		    &mo LWR         &mo ALTGR         &kp SPACE       &kp RALT        &kp RCTRL 
+                                                                                    &kp LWIN 	    &kp LALT 	    &kp SPACE 	    &kp W          		    &mo ADJ		    &mo LWR         &mo ALTGR       &kp SPACE       &kp RALT        &kp RCTRL 
 																	                &mo LWR	        &mo ADJ	        &mo ALTGR 	    &kp W        	 			    	 			
             >;
         };
@@ -40,10 +41,10 @@ ZMK_UNICODE_SINGLE(micro_sign, N0, N0, B, N5)  // µ
         alt_gr {                                                           
             bindings = <
 				&kp W           &bt BT_CLR      &out OUT_TOG        &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5            ___             ___             ___             ___             ___             ___             ___
-				&kp W           &kp W 		    &kp TAB 			&kp N1 		    &kp DQT		    &kp N3 		    &kp N4 		    &kp N5             	    ___ 		    &kp LBRC	    &kp LBKT        &kp RBKT        &kp RBRC	    &kp BSLH        &kp TILDE 
-                &kp W           &kp W 		    &kp LOCKING_CAPS	&kp Q 		    &kp W 		    &kp E 		    &kp R 		    &kp T  	         	    ___ 		    ___ 		    &kp N8 		    &kp N9 		    ___       	    ___ 		    ___
-                &kp W           &kp W 		    &kp LSHIFT			&kp A	 	    &kp S 		    &kp D 		    &kp F 		    &kp G            	    ___ 		    ___ 		    &kp N5  		&kp N6 		    ___ 		    ___      	    ___
-                &kp W           &kp W 		    &kp LCTRL			&kp Y 	 	    &kp X 		    &kp C		    &kp V	 	    &kp B            	    ___ 		    &micro_sign	    &kp N2          &kp N3		    ___     	    ___ 	 	    ___
+				&kp W           &kp W 		    &kp TAB 			&kp N1 		    &kp DQT		    &kp N3 		    &kp N4 		    &kp N5             	    ___ 		    &kp LBRC	    &kp LBKT        &kp RBKT        &kp RBRC	    &kp BSLH        ___ 
+                &kp W           &kp W 		    &kp LOCKING_CAPS	&kp Q 		    &kp W 		    &kp E 		    &kp R 		    &kp T  	         	    ___ 		    ___ 		    ___ 		 	&kp N9 		    ___       	    ___ 		    &kp TILDE
+                &kp W           &kp W 		    &kp LSHIFT			&kp A	 	    &kp S 		    &kp D 		    &kp F 		    &kp G            	    ___ 		    ___ 		    ___	 		 	&kp N6 		    ___ 		    ___      	    ___
+                &kp W           &kp W 		    &kp LCTRL			&kp Y 	 	    &kp X 		    &kp C		    &kp V	 	    &kp B            	    ___ 		    &micro_sign	    ___ 	 	 	&kp N3		    ___     	    ___ 	 	    ___
                                                                                     &kp LWIN 	    &kp LALT 	    &kp SPACE 	    &kp W          		    ___		        ___             &mo DOT         &kp COMMA       ___             ___ 
 																	                &mo LWR	        &mo ADJ	        &mo ALTGR 	    &kp W        	 	             
             >;
@@ -56,7 +57,7 @@ ZMK_UNICODE_SINGLE(micro_sign, N0, N0, B, N5)  // µ
                 &kp W           &kp W 		    &kp LOCKING_CAPS	&kp Q 		    &kp W 		    &euro_sign	    &kp R 		    &kp T  	         	    &kp Z 		    &kp U 		    &kp I 		    &kp O 		    &kp P 		    &kp W 		    &kp W
                 &kp W           &kp W 		    &kp LSHIFT			&kp A	 	    &kp S 		    &kp D 		    &kp F 		    &kp G            	    &kp H 		    &kp J 		    &kp K  		    &kp L 		    &kp O 		    &kp W	 	    &kp W
                 &kp W           &kp W 		    &kp LCTRL			&kp Y 	 	    &kp X 		    &kp C		    &kp V	 	    &kp B            	    &kp N 		    &kp M 		    &kp COMMA	    &kp DOT		    &kp W	 	    &kp W	 	    &kp W
-                                                                                    &kp LWIN 	    &kp LALT 	    &kp SPACE 	    &kp W          		    &mo ADJ		    &mo LWR         &mo ALTGR         &kp SPACE       &kp RALT        &kp RCTRL 
+                                                                                    &kp LWIN 	    &kp LALT 	    &kp SPACE 	    &kp W          		    &mo ADJ		    &mo LWR         &mo ALTGR       &kp SPACE       &kp RALT        &kp RCTRL 
 																	                &mo LWR	        &mo ADJ	        &mo ALTGR 	    &kp W        	 	
             >;
         };
@@ -68,7 +69,7 @@ ZMK_UNICODE_SINGLE(micro_sign, N0, N0, B, N5)  // µ
                 &kp W           &kp W 		    &kp LOCKING_CAPS	&kp Q 		    &kp W 		    &kp E 		    &kp R 		    &kp T  	         	    &kp Z 		    &kp U 		    &kp I 		    &kp O 		    &kp P 		    &kp W 		    &kp W
                 &kp W           &kp W 		    &kp LSHIFT			&kp A	 	    &kp S 		    &kp D 		    &kp F 		    &kp G            	    &kp H 		    &kp J 		    &kp K  		    &kp L 		    &kp O 		    &kp W	 	    &kp W
                 &kp W           &kp W 		    &kp LCTRL			&kp Y 	 	    &kp X 		    &kp C		    &kp V	 	    &kp B            	    &kp N 		    &kp M 		    &kp COMMA	    &kp DOT		    &kp W	 	    &kp W	 	    &kp W
-                                                                                    &kp LWIN 	    &kp LALT 	    &kp SPACE 	    &kp W          		    &mo ADJ		    &mo LWR         &mo ALTGR         &kp SPACE       &kp RALT        &kp RCTRL 
+                                                                                    &kp LWIN 	    &kp LALT 	    &kp SPACE 	    &kp W          		    &mo ADJ		    &mo LWR         &mo ALTGR       &kp SPACE       &kp RALT        &kp RCTRL 
 																	                &mo LWR	        &mo ADJ	        &mo ALTGR 	    &kp W        	 	                    
             >;
         };
