@@ -21,6 +21,7 @@ ZMK_UNICODE_SINGLE(at,                  N0, N0, N4, N0)                     // @
 ZMK_UNICODE_SINGLE(euro_sign,           N2, N0, A, C)                       // €
 ZMK_UNICODE_SINGLE(micro_sign,          N0, N0, B, N5)                      // µ
 ZMK_UNICODE_SINGLE(backsl,              N0, N0, N5, C)                      // Backslash
+ZMK_UNICODE_SINGLE(tilde_sign,          N0, N0, N7, E)                      // ~
 ZMK_UNICODE_PAIR(number_apostrophe,     N0, N0, N2, N3, N0, N0, N2, N7)     // # '
 ZMK_UNICODE_PAIR(acute_grave_accent,    N0, N0, N6, N0, N0, N0, B, N4)      // ´ `
 ZMK_UNICODE_PAIR(plus_asterisk,         N0, N0, N2, B,  N0, N0, N2, A)      // + *
@@ -46,7 +47,7 @@ ZMK_UNICODE_PAIR(hyphen_low_line,       N0, N0, N2, D,  N0, N0, N5, F)      // -
             bindings = <
 				___             ___    		    ___     			___ 	 	    ___ 		    ___ 		    ___ 		    ___                     ___             ___             ___             ___             ___                 ___             ___
 				___             ___    		    ___      			___ 		    ___ 		    ___ 		    ___ 		    ___             	    ___ 		    &kp LBRC	    &kp LBKT        &kp RBKT        &kp RBRC	        &backsl         ___ 
-                ___             ___ 	    	___      		    &at 		    ___ 		    &euro_sign	    ___        	    ___          		    ___ 		    ___ 		 	___ 		    ___       	    ___      		    ___             &kp TILDE
+                ___             ___ 	    	___      		    &at 		    ___ 		    &euro_sign	    ___        	    ___          		    ___ 		    ___ 		 	___ 		    ___       	    ___      		    ___             &tilde_sign
                 ___             ___    		    ___     			___ 	 	    ___ 		    ___ 		    ___ 		    ___             	    ___ 		    ___ 		    ___	 		 	___ 		    ___ 		        ___      	    ___
                 ___             ___    		    ___     			___ 	 	    ___ 		    ___ 		    ___	 	        ___                	    ___ 		    &micro_sign	    ___ 	 	 	___ 		    ___     	        ___ 	 	    ___
                                                                                     ___      	    ___     	    ___ 	        ___        		        ___		        ___             ___             ___             ___                 ___ 
