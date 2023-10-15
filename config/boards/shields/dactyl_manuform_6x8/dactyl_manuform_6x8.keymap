@@ -41,8 +41,8 @@ ZMK_UNICODE_PAIR(le_gr,                 N0, N0, N3, C,  N0, N0, N3, E)      // <
 				___             ___ 	        &kp ESC 			&kp F1 		    &kp F2 		    &kp F3 		    &kp F4 		    &kp F5             	    &kp F6	 	    &kp F7 		    &kp F8 		    &kp F9 		    &kp F10             &kp F11         &kp F12
 				___             ___ 		    &cirfl_deg          &kp N1 		    &kp N2 		    &kp N3 		    &kp N4 		    &kp N5             	    &kp N6 		    &kp N7 		    &kp N8 		    &kp N9 		    &kp N0 		        &de_eszett      &acute_grave_accent
                 ___             ___		        &kp TAB             &kp Q 		    &kp W 		    &kp E 		    &kp R 		    &kp T  	         	    &kp Y 		    &kp U 		    &kp I 		    &kp O 		    &kp P 		        &de_ue          &plus_asterisk
-                ___             ___ 		    &kp LSHIFT			&kp A	 	    &kp S 		    &kp D 		    &kp F 		    &kp G            	    &kp H 		    &kp J 		    &kp K  		    &kp L 		    &de_oe              &de_ae          &number_apostrophe
-                ___             &kp LCTRL	    &le_gr	            &kp Z 	 	    &kp X 		    &kp C		    &kp V	 	    &kp B            	    &kp N 		    &kp M 		    &kp COMMA	    &kp DOT		    &hyphen_low_line    &kp LSHIFT 	    &kp ENTER
+                ___             ___ 		    &le_gr  			&kp A	 	    &kp S 		    &kp D 		    &kp F 		    &kp G            	    &kp H 		    &kp J 		    &kp K  		    &kp L 		    &de_oe              &de_ae          &number_apostrophe
+                ___             &kp LCTRL	    &kp LSHIFT	        &kp Z 	 	    &kp X 		    &kp C		    &kp V	 	    &kp B            	    &kp N 		    &kp M 		    &kp COMMA	    &kp DOT		    &hyphen_low_line    &kp LSHIFT 	    &kp ENTER
                                                                                     &kp LWIN 	    &kp LALT 	    &kp SPACE 	    ___          		    &mo DVC		    &mo ADJ         ___             &kp SPACE       &mo ALTGR           &kp RCTRL 
 																	                &mo ADJ	        &mo DVC	        &mo ALTGR 	    ___        	 			    	 			
             >;
