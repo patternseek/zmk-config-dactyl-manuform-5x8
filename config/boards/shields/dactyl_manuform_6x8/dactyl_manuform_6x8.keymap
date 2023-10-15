@@ -69,7 +69,7 @@ ZMK_UNICODE_PAIR(hyphen_low_line,       N0, N0, N2, D,  N0, N0, N5, F)      // -
         device_layer {
             bindings = <
 				___             &out OUT_TOG    &bt BT_CLR          &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5            &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_SEL 5        &bt BT_CLR      &out OUT_TOG
-				___    		    ___      		___ 		        ___ 		    ___ 		    ___ 		    ___             ___ 		            ___             ___             ___             ___             ___                 ___             ___ 
+				___    		    ___      		___ 		        ___ 		    ___ 		    ___ 		    ___             ___ 		            &kp W           ___             ___             ___             ___                 ___             ___ 
                 ___             ___      		___ 		        ___ 		    ___     	    ___        	    ___          	___ 		            ___             ___ 		 	___ 		    ___       	    ___      		    ___             ___
                 ___             ___      		___ 		        ___ 		    ___     	    ___        	    ___          	___ 		            ___             ___ 		 	___ 		    ___       	    ___      		    ___             ___
                 ___             ___      		___ 		        ___ 		    ___     	    ___        	    ___          	___ 		            ___             ___ 		 	___ 		    ___       	    ___      		    ___             ___
