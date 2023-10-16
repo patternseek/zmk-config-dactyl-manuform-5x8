@@ -52,8 +52,8 @@ ZMK_UNICODE_PAIR(le_gr,                 N0, N0, N3, C,  N0, N0, N3, E)      // <
             bindings = <
 				___             ___    		    ___     			___ 	 	    ___ 		    ___ 		    ___ 		    ___                     ___             ___             ___             ___             ___                 ___             ___
 				___             ___    		    ___      			___ 		    ___ 		    ___ 		    ___ 		    ___             	    ___ 		    &kp LBRC	    &kp LBKT        &kp RBKT        &kp RBRC	        &backsl         &kp DEL 
-                ___             ___ 	    	___      		    &at 		    ___ 		    &euro_sign	    ___        	    ___          		    ___ 		    ___ 		 	___ 		    ___       	    ___      		    ___             &tilde_sign
-                ___             ___    		    &pipe     			___ 	 	    ___ 		    ___ 		    ___ 		    ___             	    ___ 		    ___ 		    ___	 		 	___ 		    ___ 		        ___      	    ___
+                ___             ___ 	    	___      		    &at 		    ___ 		    &euro_sign	    ___        	    ___          		    ___ 		    &kp HOME	 	&kp UP 		    &kp END    	    ___      		    ___             &tilde_sign
+                ___             ___    		    &pipe     			___ 	 	    ___ 		    ___ 		    ___ 		    ___             	    ___ 		    &kp LEFT	    &kp DOWN	 	&kp RIGHT	    ___ 		        ___      	    ___
                 ___             ___    		    ___     			___ 	 	    ___ 		    ___ 		    ___	 	        ___                	    ___ 		    &micro_sign	    ___ 	 	 	___ 		    ___     	        ___ 	 	    ___
                                                                                     ___      	    ___     	    ___ 	        ___        		        ___		        ___             ___             &kp BSPC        ___                 ___ 
 																	                ___             ___ 	        ___ 	        ___      	 	             
