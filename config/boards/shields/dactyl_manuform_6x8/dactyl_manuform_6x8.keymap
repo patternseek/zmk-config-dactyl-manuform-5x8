@@ -21,7 +21,7 @@
         compatible = "zmk,combos";
         combo_bspc {
             timeout-ms = <50>;
-            key-positions = <82 87>;
+            key-positions = <0 1>;
             bindings = <&kp BSPC>;
         };
     };
