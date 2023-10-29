@@ -20,6 +20,10 @@
 ZMK_UNICODE_SINGLE(at,                  N0, N0, N4, N0)                     // @
 ZMK_UNICODE_SINGLE(euro_sign,           N2, N0, A, C)                       // €
 ZMK_UNICODE_SINGLE(micro_sign,          N0, N0, B, N5)                      // µ
+ZMK_UNICODE_SINGLE(braceleft,           N0, N0, N7, B)                      // Brace left
+ZMK_UNICODE_SINGLE(bracketleft,         N0, N0, N5, B)                      // Bracket left
+ZMK_UNICODE_SINGLE(bracketright,        N0, N0, N5, D)                      // Bracket right
+ZMK_UNICODE_SINGLE(braceright,          N0, N0, N7, D)                      // Brace right
 ZMK_UNICODE_SINGLE(backsl,              N0, N0, N5, C)                      // Backslash
 ZMK_UNICODE_SINGLE(tilde_sign,          N0, N0, N7, E)                      // ~
 ZMK_UNICODE_SINGLE(pipe,                N0, N0, N7, C)                      // |
@@ -51,7 +55,7 @@ ZMK_UNICODE_PAIR(le_gr,                 N0, N0, N3, C,  N0, N0, N3, E)      // <
         alt_gr_layer {                                                           
             bindings = <
 				___             ___    		    ___     			___ 	 	    ___ 		    ___ 		    ___ 		    ___                     ___             ___             ___             ___             ___                 ___             ___
-				___             ___    		    ___      			___ 		    ___ 		    ___ 		    ___ 		    ___             	    ___ 		    &kp LBRC	    &kp LBKT        &kp RBKT        &kp RBRC	        &backsl         &kp DEL 
+				___             ___    		    ___      			___ 		    ___ 		    ___ 		    ___ 		    ___             	    ___ 		    &braceleft	    &bracketleft    &bracketright   &braceright	        &backsl         &kp DEL 
                 ___             ___ 	    	___      		    &at 		    ___ 		    &euro_sign	    ___        	    ___          		    ___ 		    &kp HOME	 	&kp UP 		    &kp END    	    ___      		    ___             &tilde_sign
                 ___             ___    		    &pipe     			___ 	 	    ___ 		    ___ 		    ___ 		    ___             	    ___ 		    &kp LEFT	    &kp DOWN	 	&kp RIGHT	    ___ 		        ___      	    ___
                 ___             ___    		    ___     			___ 	 	    ___ 		    ___ 		    ___	 	        ___                	    ___ 		    &micro_sign	    ___ 	 	 	___ 		    ___     	        ___ 	 	    ___
