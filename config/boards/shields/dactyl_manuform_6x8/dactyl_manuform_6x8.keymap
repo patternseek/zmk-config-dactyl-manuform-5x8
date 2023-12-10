@@ -33,15 +33,6 @@
 };
 
 /* additional signs defined with unicode */  
-ZMK_UNICODE_SINGLE(at,                  N0, N0, N4, N0)                     // @
-ZMK_UNICODE_SINGLE(euro_sign,           N2, N0, A, C)                       // €
-ZMK_UNICODE_SINGLE(micro_sign,          N0, N0, B, N5)                      // µ
-ZMK_UNICODE_SINGLE(braceleft,           N0, N0, N7, B)                      // Brace left
-ZMK_UNICODE_SINGLE(bracketleft,         N0, N0, N5, B)                      // Bracket left
-ZMK_UNICODE_SINGLE(bracketright,        N0, N0, N5, D)                      // Bracket right
-ZMK_UNICODE_SINGLE(braceright,          N0, N0, N7, D)                      // Brace right
-ZMK_UNICODE_SINGLE(backsl,              N0, N0, N5, C)                      // Backslash
-ZMK_UNICODE_SINGLE(tilde_sign,          N0, N0, N7, E)                      // ~
 ZMK_UNICODE_SINGLE(pipe,                N0, N0, N7, C)                      // |
 ZMK_UNICODE_SINGLE(ss_2,                N0, N0, B, N2)                      // ^2
 ZMK_UNICODE_SINGLE(ss_3,                N0, N0, B, N3)                      // ^3
@@ -58,11 +49,11 @@ ZMK_UNICODE_PAIR(le_gr,                 N0, N0, N3, C,  N0, N0, N3, E)      // <
 
         default_layer {
             bindings = <
-				___             ___ 	        &kp ESC 			&kp F1 		    &kp F2 		    &kp F3 		    &kp F4 		    &kp F5             	    &kp F6	 	    &kp F7 		    &kp F8 		    &kp F9 		    &kp F10             &kp F11         &kp F12
-				___             ___ 		    &cirfl_deg          &kp N1 		    &kp N2 		    &kp N3 		    &kp N4 		    &kp N5             	    &kp N6 		    &kp N7 		    &kp N8 		    &kp N9 		    &kp N0 		        &de_eszett      &acute_grave_accent
-                ___             ___		        &kp TAB             &kp Q 		    &kp W 		    &kp E 		    &kp R 		    &kp T  	         	    &kp Y 		    &kp U 		    &kp I 		    &kp O 		    &kp P 		        &de_ue          &plus_asterisk
-                ___             ___ 		    &le_gr  			&kp A	 	    &kp S 		    &kp D 		    &kp F 		    &kp G            	    &kp H 		    &kp J 		    &kp K  		    &kp L 		    &de_oe              &de_ae          &number_apostrophe
-                ___             &kp LCTRL	    &kp LSHIFT	        &kp Z 	 	    &kp X 		    &kp C		    &kp V	 	    &kp B            	    &kp N 		    &kp M 		    &kp COMMA	    &kp DOT		    &hyphen_low_line    &kp LSHIFT 	    &kp ENTER
+				___             ___ 	        &kp ESC 			&kp F1 		    &kp F2 		    &kp F3 		    &kp F4 		    &kp F5             	    &kp F6	 	    &kp F7 		    &kp F8 		    &kp F9 		    &kp F10             &kp F11         	&kp F12
+				___             ___ 		    &cirfl_deg          &kp N1 		    &kp N2 		    &kp N3 		    &kp N4 		    &kp N5             	    &kp N6 		    &kp N7 		    &kp N8 		    &kp N9 		    &kp N0 		        &kp DE_CAPITAL_SZ	&acute_grave_accent
+                ___             ___		        &kp TAB             &kp Q 		    &kp W 		    &kp E 		    &kp R 		    &kp T  	         	    &kp Y 		    &kp U 		    &kp I 		    &kp O 		    &kp P 		        &kp DE_U_UMLAUT 	&plus_asterisk
+                ___             ___ 		    &le_gr  			&kp A	 	    &kp S 		    &kp D 		    &kp F 		    &kp G            	    &kp H 		    &kp J 		    &kp K  		    &kp L 		    &kp DE_O_UMLAUT     &kp DE_A_UMLAUT 	&number_apostrophe
+                ___             &kp LCTRL	    &kp LSHIFT	        &kp Z 	 	    &kp X 		    &kp C		    &kp V	 	    &kp B            	    &kp N 		    &kp M 		    &kp COMMA	    &kp DOT		    &hyphen_low_line    &kp LSHIFT 	    	&kp ENTER
                                                                                     &kp LWIN 	    &kp LALT 	    &spc_bspc       ___      		        &mo DVC		    &mo ADJ         ___             &spc_bspc       &mo ALTGR           &kp RCTRL 
 																	                &mo ADJ	        &mo DVC	        &mo ALTGR 	    ___        	 			    	 			
             >;
@@ -71,10 +62,10 @@ ZMK_UNICODE_PAIR(le_gr,                 N0, N0, N3, C,  N0, N0, N3, E)      // <
         alt_gr_layer {                                                           
             bindings = <
 				___             ___    		    ___     			___ 	 	    ___ 		    ___ 		    ___ 		    ___                     ___             ___             ___             ___             ___                 ___             ___
-				___             ___    		    ___      			___ 		    ___ 		    ___ 		    ___ 		    ___             	    ___ 		    &braceleft	    &bracketleft    &bracketright   &braceright	        &backsl         &kp DEL 
-                ___             ___ 	    	___      		    &at 		    ___ 		    &kp DE_EURO	    ___        	    ___          		    ___ 		    &kp HOME	 	&kp UP 		    &kp END    	    ___      		    ___             &tilde_sign
-                ___             ___    		    &pipe     			___ 	 	    ___ 		    ___ 		    ___ 		    ___             	    ___ 		    &kp LEFT	    &kp DOWN	 	&kp RIGHT	    ___ 		        ___      	    ___
-                ___             ___    		    ___     			___ 	 	    ___ 		    ___ 		    ___	 	        ___                	    ___ 		    &micro_sign	    ___ 	 	 	___ 		    ___     	        ___ 	 	    ___
+				___             ___    		    ___      			___ 		    ___ 		    ___ 		    ___ 		    ___             	    ___ 		    &kp DE_LBRC	    &kp DE_LBKT     &kp DE_RBKT     &kp DE_RBRC	        &kp DE_BSLH     &kp DEL 
+                ___             ___ 	    	___      		    &kp DE_AT	    ___ 		    &kp DE_EURO	    ___        	    ___          		    ___ 		    &kp HOME	 	&kp UP 		    &kp END    	    ___      		    ___             &kp DE_TILDE
+                ___             ___    		    &kp DE_PIPE			___ 	 	    ___ 		    ___ 		    ___ 		    ___             	    ___ 		    &kp LEFT	    &kp DOWN	 	&kp RIGHT	    ___ 		        ___      	    ___
+                ___             ___    		    ___     			___ 	 	    ___ 		    ___ 		    ___	 	        ___                	    ___ 		    &kp DE_MU	    ___ 	 	 	___ 		    ___     	        ___ 	 	    ___
                                                                                     ___      	    ___     	    ___ 	        ___        		        ___		        ___             ___             &kp BSPC        ___                 ___ 
 																	                ___             ___ 	        ___ 	        ___      	 	             
             >;
