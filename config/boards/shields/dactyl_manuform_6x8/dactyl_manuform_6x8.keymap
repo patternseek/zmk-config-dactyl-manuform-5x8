@@ -32,16 +32,6 @@
     };
 };
 
-/* additional signs defined with unicode */  
-ZMK_UNICODE_SINGLE(pipe,                N0, N0, N7, C)                      // |
-ZMK_UNICODE_SINGLE(ss_2,                N0, N0, B, N2)                      // ^2
-ZMK_UNICODE_SINGLE(ss_3,                N0, N0, B, N3)                      // ^3
-ZMK_UNICODE_PAIR(number_apostrophe,     N0, N0, N2, N3, N0, N0, N2, N7)     // # '
-ZMK_UNICODE_PAIR(acute_grave_accent,    N0, N0, N6, N0, N0, N0, B, N4)      // ´ `
-ZMK_UNICODE_PAIR(plus_asterisk,         N0, N0, N2, B,  N0, N0, N2, A)      // + *
-ZMK_UNICODE_PAIR(hyphen_low_line,       N0, N0, N2, D,  N0, N0, N5, F)      // - _
-ZMK_UNICODE_PAIR(cirfl_deg,             N0, N0, N5, E,  N0, N0, B, N0)      // ^ °
-ZMK_UNICODE_PAIR(le_gr,                 N0, N0, N3, C,  N0, N0, N3, E)      // < >
 
 / {
     keymap {
@@ -50,10 +40,10 @@ ZMK_UNICODE_PAIR(le_gr,                 N0, N0, N3, C,  N0, N0, N3, E)      // <
         default_layer {
             bindings = <
 				___             ___ 	        &kp ESC 			&kp F1 		    &kp F2 		    &kp F3 		    &kp F4 		    &kp F5             	    &kp F6	 	    &kp F7 		    &kp F8 		    &kp F9 		    &kp F10             &kp F11         	&kp F12
-				___             ___ 		    &cirfl_deg          &kp N1 		    &kp N2 		    &kp N3 		    &kp N4 		    &kp N5             	    &kp N6 		    &kp N7 		    &kp N8 		    &kp N9 		    &kp N0 		        &kp DE_CAPITAL_SZ	&acute_grave_accent
-                ___             ___		        &kp TAB             &kp Q 		    &kp W 		    &kp E 		    &kp R 		    &kp T  	         	    &kp Y 		    &kp U 		    &kp I 		    &kp O 		    &kp P 		        &kp DE_U_UMLAUT 	&plus_asterisk
-                ___             ___ 		    &le_gr  			&kp A	 	    &kp S 		    &kp D 		    &kp F 		    &kp G            	    &kp H 		    &kp J 		    &kp K  		    &kp L 		    &kp DE_O_UMLAUT     &kp DE_A_UMLAUT 	&number_apostrophe
-                ___             &kp LCTRL	    &kp LSHIFT	        &kp Z 	 	    &kp X 		    &kp C		    &kp V	 	    &kp B            	    &kp N 		    &kp M 		    &kp COMMA	    &kp DOT		    &hyphen_low_line    &kp LSHIFT 	    	&kp ENTER
+				___             ___ 		    &kp DE_CARET        &kp N1 		    &kp N2 		    &kp N3 		    &kp N4 		    &kp N5             	    &kp N6 		    &kp N7 		    &kp N8 		    &kp N9 		    &kp N0 		        &kp DE_CAPITAL_SZ	&kp DE_ACUTE
+                ___             ___		        &kp TAB             &kp Q 		    &kp W 		    &kp E 		    &kp R 		    &kp T  	         	    &kp Y 		    &kp U 		    &kp I 		    &kp O 		    &kp P 		        &kp DE_U_UMLAUT 	&kp DE_PLUS
+                ___             ___ 		    &kp DE_LT  			&kp A	 	    &kp S 		    &kp D 		    &kp F 		    &kp G            	    &kp H 		    &kp J 		    &kp K  		    &kp L 		    &kp DE_O_UMLAUT     &kp DE_A_UMLAUT 	&kp DE_HASH
+                ___             &kp LCTRL	    &kp LSHIFT	        &kp Z 	 	    &kp X 		    &kp C		    &kp V	 	    &kp B            	    &kp N 		    &kp M 		    &kp COMMA	    &kp DOT		    &kp DE_MINUS        &kp LSHIFT 	    	&kp ENTER
                                                                                     &kp LWIN 	    &kp LALT 	    &spc_bspc       ___      		        &mo DVC		    &mo ADJ         ___             &spc_bspc       &mo ALTGR           &kp RCTRL 
 																	                &mo ADJ	        &mo DVC	        &mo ALTGR 	    ___        	 			    	 			
             >;
@@ -73,7 +63,7 @@ ZMK_UNICODE_PAIR(le_gr,                 N0, N0, N3, C,  N0, N0, N3, E)      // <
 
         adjust_layer {
             bindings = <
-				___             ___    		    ___     			___ 	 	    &ss_2 		    &ss_3 		    ___ 		    ___                     ___             ___             ___             ___             ___                 ___             ___
+				___             ___    		    ___     			___ 	 	    &kp DE_SQUARE   &kp DE_CUBE     ___ 		    ___                     ___             ___             ___             ___             ___                 ___             ___
 				___             ___    		    ___      			___ 		    ___ 		    ___ 		    ___ 		    ___             	    ___ 		    &kp N7 		    &kp N8 		    &kp N9          ___                 ___             ___ 
                 ___             ___             ___      		    ___ 		    ___ 		    ___     	    ___        	    ___          		    ___ 		    &kp N4 		    &kp N5 		    &kp N6          ___      		    ___             ___
                 ___             ___    		    ___     			___ 	 	    ___ 		    ___ 		    ___ 		    ___             	    ___ 		    &kp N1 		    &kp N2 		    &kp N3          ___ 		        ___      	    ___
