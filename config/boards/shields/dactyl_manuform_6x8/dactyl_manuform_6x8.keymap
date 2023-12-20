@@ -30,9 +30,9 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        : sz_questionmark {
+        : sz_question {
             compatible = "zmk,behavior-mod-morph";
-            label = "SZ_QUESTIONMARK";
+            label = "SZ_QUESTION";
             #binding-cells = <0>;
             bindings = <&kp DE_CAPITAL_SZ>, <&kp DE_QMARK>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
