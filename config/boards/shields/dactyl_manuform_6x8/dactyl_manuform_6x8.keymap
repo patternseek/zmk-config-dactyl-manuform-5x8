@@ -32,7 +32,7 @@
 
         sz_question: sz_questionmark {
             compatible = "zmk,behavior-mod-morph";
-            label = "SPACE_BSPC";
+            label = "SZ_QUESTIONMARK";
             #binding-cells = <0>;
             bindings = <&kp DE_CAPITAL_SZ>, <&kp QMARK>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
