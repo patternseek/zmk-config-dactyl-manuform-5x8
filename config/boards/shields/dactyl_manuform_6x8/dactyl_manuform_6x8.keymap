@@ -30,7 +30,7 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        : sz_question {
+        sz_question: sz_question {
             compatible = "zmk,behavior-mod-morph";
             label = "SZ_QUESTION";
             #binding-cells = <0>;
