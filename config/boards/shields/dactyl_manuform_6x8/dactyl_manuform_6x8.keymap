@@ -5,16 +5,14 @@
 
 /* zmk-nodefree-config */
 #include "../../../../zmk-nodefree-config/helper.h"
-#include "../../../../zmk-nodefree-config/international_chars/german.dtsi"
 
 /* zmk-locale-generator key header */
 #include "keys_de.h" 
 
 /* layer shortcuts */
 #define DEFAULT 0
-#define ALTGR 1
-#define ADJ 2
-#define DVC 3
+#define ADJ 1
+#define DVC 2
 
 /* shortcuts */
 #define ___ &trans
@@ -56,29 +54,6 @@
             >;
         };
 
-        alt_gr_layer {                                                           
-            bindings = <
-				___             ___    		    ___     			___ 	 	    ___ 		    ___ 		    ___ 		    ___                     ___             ___             ___             ___             ___                 ___             ___
-				___             ___    		    ___      			___ 		    ___ 		    ___ 		    ___ 		    ___             	    ___ 		    &kp DE_LBRC	    &kp DE_LBKT     &kp DE_RBKT     &kp DE_RBRC	        &kp DE_BSLH     &kp DE_ACUTE 
-                ___             ___ 	    	___      		    &kp DE_AT	    ___ 		    &kp DE_EURO	    ___        	    ___          		    ___ 		    &kp HOME	 	&kp UP 		    &kp END    	    ___      		    ___             &kp DE_TILDE
-                ___             ___    		    &kp DE_PIPE			___ 	 	    ___ 		    ___ 		    ___ 		    ___             	    ___ 		    &kp LEFT	    &kp DOWN	 	&kp RIGHT	    ___ 		        ___      	    ___
-                ___             ___    		    ___     			___ 	 	    ___ 		    ___ 		    ___	 	        ___                	    ___ 		    &kp DE_MU	    ___ 	 	 	___ 		    ___     	        ___ 	 	    ___
-                                                                                    ___      	    ___     	    ___ 	        ___        		        ___		        ___             ___             &kp BSPC        ___                 ___ 
-																	                ___             ___ 	        ___ 	        ___      	 	             
-            >;
-        };
-
-        adjust_layer {
-            bindings = <
-				___             ___    		    ___     			___ 	 	    &kp DE_SQUARE   &kp DE_CUBE     ___ 		    ___                     ___             ___             ___             ___             ___                 ___             ___
-				___             ___    		    ___      			___ 		    ___ 		    ___ 		    ___ 		    ___             	    ___ 		    &kp N7 		    &kp N8 		    &kp N9          ___                 ___             ___ 
-                ___             ___             ___      		    ___ 		    ___ 		    ___     	    ___        	    ___          		    ___ 		    &kp N4 		    &kp N5 		    &kp N6          ___      		    ___             ___
-                ___             ___    		    ___     			___ 	 	    ___ 		    ___ 		    ___ 		    ___             	    ___ 		    &kp N1 		    &kp N2 		    &kp N3          ___ 		        ___      	    ___
-                ___             ___    		    ___     			___ 	 	    ___ 		    ___ 		    ___	 	        ___                	    ___ 		    &kp N0     	    &kp COMMA 	 	&kp DOT		    ___     	        ___ 	 	    ___
-                                                                                    ___      	    ___     	    ___ 	        ___        		        ___		        ___             ___             ___             ___                 ___ 
-																	                ___             ___ 	        ___ 	        ___      	 	            	                    
-            >;
-        };
 
         device_layer {
             bindings = <
