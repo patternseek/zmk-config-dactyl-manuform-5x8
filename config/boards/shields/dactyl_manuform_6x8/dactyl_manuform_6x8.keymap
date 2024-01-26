@@ -17,28 +17,7 @@
 /* shortcuts */
 #define ___ &trans
 
-/* behaviors */
-/*
-/ {
-    behaviors {
-        spc_bspc: space_bspc {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SPACE_BSPC";
-            #binding-cells = <0>;
-            bindings = <&kp SPACE>, <&kp BSPC>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
 
-        sz_question: sz_question {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SZ_QUESTION";
-            #binding-cells = <0>;
-            bindings = <&kp DE_CAPITAL_SZ>, <&kp DE_QMARK>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-    };
-};
-*/
 / {
     keymap {
         compatible = "zmk,keymap";
