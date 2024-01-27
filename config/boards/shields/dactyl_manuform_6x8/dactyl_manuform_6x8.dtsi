@@ -42,7 +42,7 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3)                                                 
         compatible = "alps,ec11";
         a-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <80>;
+        steps = <20>;
         status = "disabled";
     };
 
