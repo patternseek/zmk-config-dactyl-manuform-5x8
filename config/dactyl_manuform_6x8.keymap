@@ -1,0 +1,39 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+
+/* zmk-nodefree-config */
+#include "../../../../zmk-nodefree-config/helper.h"
+
+/* zmk-locale-generator key header */
+/* # include "keys_de.h"  */
+
+/* layer shortcuts */
+#define DEFAULT 0
+#define RAISE 1
+#define META 2
+
+/* shortcuts */
+#define ___ &trans
+
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                &kp ESC         &kp N1          &kp N2              &kp N3             &kp N4             &kp N5             &kp N6                        &kp N7                     &kp N8             &kp N9            &kp N0           &kp MINUS       &kp EQUAL           &kp BACKSPACE      &kp F9
+                &kp TAB         &kp Q           &kp W               &kp E              &kp R              &kp T              ___                           &kp F1                     &kp Y              &kp U             &kp I            &kp O           &kp P               &kp LEFT_BRACKET   &kp RIGHT_BRACKET
+                ___             &kp A           &kp S               &kp D              &kp F              &kp G              ___                           &kp F2                     &kp H              &kp J             &kp K            &kp L           &kp SEMI            &kp APOS           &kp NUHS
+                &kp LSHIFT      &kp Z           &kp X               &kp C              &kp V              &kp B                                                                       &kp N              &kp M             &kp COMMA        &kp DOT         &kp SLASH           &kp RSHIFT         &kp F8
+                &kp LCTRL       &kp NUBS        &kp HOME            &kp END                                                                                                                                                &kp F3           &kp F4          &kp F5              &kp F6             &kp F7
+                                                &kp LALT            &mo RAISE          &kp SPACE          &kp LEFT_WIN       ___                           ___                        &kp PG_UP          &kp ENTER         &mo RAISE        &kp PG_DN
+            >;
+        };
+
+
+    };
+};
+
