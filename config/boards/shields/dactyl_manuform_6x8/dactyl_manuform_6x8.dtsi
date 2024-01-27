@@ -46,4 +46,10 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3)                                                 
         status = "disabled";
     };
 
+    sensors: sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&left_encoder>;
+        triggers-per-rotation = <20>;
+    };
+
 };
