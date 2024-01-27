@@ -15,14 +15,8 @@
 #define META 2
 
 / {
-    behaviors {
-        volknob: volknob {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "VOLKNOB";
-            #sensor-binding-cells = <0>;
-            bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
-        };
-    };
+
+    sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 
     keymap {
         compatible = "zmk,keymap";
