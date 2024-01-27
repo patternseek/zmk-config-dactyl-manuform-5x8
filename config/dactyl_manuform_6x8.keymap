@@ -33,12 +33,12 @@
 
         layer_1 {
             bindings = <
-&trans            &trans  &trans    &trans    &trans     &trans  &sys_reset    &sys_reset  &trans  &trans    &trans          &trans     &trans  &trans  &kp DEL
-&trans            &trans  &trans    &kp UP    &trans     &trans  &trans        &trans      &trans  &trans    &kp UP          &trans     &trans  &trans  &trans
-&trans            &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans        &trans      &trans  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans  &trans
-&trans            &trans  &trans    &trans    &trans     &trans                            &trans  &trans    &trans          &trans     &trans  &trans  &trans
-&kp K_PLAY_PAUSE  &trans  &trans    &trans                                                                   &trans          &trans     &trans  &trans  &trans
-                          &trans    &trans    &trans     &trans  &trans        &trans      &trans  &trans    &trans          &trans
+&trans            &trans  &trans    &trans    &trans     &bootloader  &sys_reset    &sys_reset  &bootloader  &trans    &trans          &trans     &trans  &trans  &kp DEL
+&trans            &trans  &trans    &kp UP    &trans     &trans       &trans        &trans      &trans       &trans    &kp UP          &trans     &trans  &trans  &trans
+&trans            &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans       &trans        &trans      &trans       &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans  &trans
+&trans            &trans  &trans    &trans    &trans     &trans                                 &trans       &trans    &trans          &trans     &trans  &trans  &trans
+&kp K_PLAY_PAUSE  &trans  &trans    &trans                                                                             &trans          &trans     &trans  &trans  &trans
+                          &trans    &trans    &trans     &trans       &trans        &trans      &trans       &trans    &trans          &trans
             >;
         };
 
