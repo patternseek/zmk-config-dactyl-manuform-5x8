@@ -20,7 +20,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "VOLKNOB";
             #sensor-binding-cells = <0>;
-            bindings = <&kp K_VOL_UP>, <&kp K_VOL_DN>;
+            bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
         };
     };
 
