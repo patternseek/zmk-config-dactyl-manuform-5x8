@@ -1,7 +1,7 @@
 #include "dactyl_manuform_6x8.dtsi"
 
 &default_transform { // The matrix transform for this board is 8 columns over because the left half is 8 columns wide according to the matrix.
-    col-offset = <78
+    col-offset = 7
 >;
 };
 
