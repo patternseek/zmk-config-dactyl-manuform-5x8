@@ -15,10 +15,12 @@
 #define META 2
 
 / {
-    sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+
 
     keymap {
         compatible = "zmk,keymap";
+
+        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 
         default_layer {
             bindings = <
