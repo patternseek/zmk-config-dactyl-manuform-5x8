@@ -15,7 +15,7 @@
 #define META 2
 
 /* shortcuts */
-#define ___ &trans
+#define ___ &none
 
 
 / {
